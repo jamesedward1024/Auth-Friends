@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
-import Login from "./components/Login"
-import FriendList from "./components/FriendsList"
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Login from "./components/Login";
+import FriendList from "./components/FriendsList";
 import PrivateRoute from './components/PrivateRoute'
 
 function App() {
