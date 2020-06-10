@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
 import Login from "./components/Login"
-import FriendList from "./components/FriendList"
+import FriendList from "./components/FriendsList"
 import PrivateRoute from './components/PrivateRoute'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Link to='/protected'>Protected Page</Link>
 
         <Switch>
-          <PrivateRoute path="/protected" friends={friends} setFriends={setFriends} component={FriendList} />
+          <PrivateRoute path="/protected" component={FriendList} />
           <Route path="/login" component={Login} />
           <Route component={Login} />
         </Switch>
